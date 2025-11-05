@@ -46,6 +46,7 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+      cursor: pointer;
     }
 
     .menu i {
@@ -60,6 +61,7 @@
       box-shadow: 0 0 5px rgba(0,0,0,0.2);
       border-radius: 5px;
       z-index: 1;
+      min-width: 150px;
     }
 
     .submenu a {
@@ -146,38 +148,47 @@
       #home<i class="fas fa-home"></i> Home</a>
     </div>
     <div class="menu">
-      #chi<i class="fas fa-user"></i> Chi sono</a>
+      #user<i class="fas fa-user"></i> Chi sono</a>
       <div class="submenu">
         #bioBiografia</a>
         #skillsCompetenze</a>
       </div>
     </div>
     <div class="menu">
-      #contatti<i class="fas fa-envelope"></i> Contatti</a>
+      #folder<i class="fas fa-folder-open"></i> Progetti</a>
+      <div class="submenu">
+        #galleryGalleria</a>
+        #codeCodice</a>
+      </div>
+    </div>
+    <div class="menu">
+      #envelope<i class="fas fa-envelope"></i> Contatti</a>
       <div class="submenu">
         #emailEmail</a>
-        #telefonoTelefono</a>
+        #formModulo</a>
       </div>
     </div>
   </nav>
 
-  <section id="home">
+  <section id="gallery">
     <h2>Galleria Immagini</h2>
     <div class="gallery">
       https://via.placeholder.com/400x250?text=Progetto+1
       https://via.placeholder.com/400x250?text=Progetto+2
-      <img src="https://via.placeholder50?text=Progetto+3
+      https://via.placeholder.com/400x250?text=Progetto+3
       https://via.placeholder.com/400x250?text=Progetto+4
     </div>
   </section>
 
-  <section id="chi">
-    <div class="card" id="bio">
+  <section id="bio">
+    <div class="card">
       <h2>Biografia</h2>
       <p>Laureato in geologia dell’esplorazione, lavoro nel settore IT presso Poste Italiane. Ho esperienza in ServiceNow, installazioni ATM, gestione ticket e asset. Mi alleno in palestra, suono la chitarra e faccio teatro.</p>
     </div>
+  </section>
 
-    <div class="card" id="skills">
+  <section id="skills">
+    <div class="card">
       <h2>Competenze</h2>
       <ul>
         <li>ServiceNow (2 anni)</li>
@@ -189,9 +200,9 @@
     </div>
   </section>
 
-  <section id="contatti">
+  <section id="form">
     <div class="card">
-      <h2>Contattami</h2>
+      <h2>Modulo di Contatto</h2>
       <form onsubmit="inviaMessaggio(event)">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" required>
