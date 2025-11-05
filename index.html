@@ -2,59 +2,138 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Pagina Interattiva di Francesco</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francesco - Pagina Interattiva</title>
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #eef;
-      padding: 20px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
     }
-    h1 {
-      color: #0077cc;
-    }
-    #box {
-      width: 300px;
-      height: 150px;
-      background-color: #fff;
-      border: 2px solid #0077cc;
-      border-radius: 10px;
-      padding: 15px;
-      margin-top: 20px;
-      transition: background-color 0.5s ease;
-    }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
+
+    header {
       background-color: #0077cc;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      padding: 20px;
+      text-align: center;
     }
-    button:hover {
-      background-color: #005fa3;
+
+    nav {
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .menu {
+      position: relative;
+      margin: 0 15px;
+    }
+
+    .menu > a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu i {
+      margin-right: 5px;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      background-color: white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      z-index: 1;
+    }
+
+    .submenu a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    .menu:hover .submenu {
+      display: block;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Ciao Francesco 👋</h1>
-  <p>Questa è una pagina HTML con un effetto interattivo JavaScript. Premi il pulsante per cambiare il colore del box!</p>
+  <header>
+    <h1>Benvenuto nella pagina di Francesco</h1>
+  </header>
 
-  <button onclick="cambiaColore()">Cambia Colore</button>
+  <nav>
+    <div class="menu">
+      #homeHome</a>
+    </div>
+    <div class="menu">
+      #userChi sono</a>
+      <div class="submenu">
+        #bioBiografia</a>
+        #skillsCompetenze</a>
+      </div>
+    </div>
+    <div class="menu">
+      #envelopeContatti</a>
+      <div class="submenu">
+        #emailEmail</a>
+        #phoneTelefono</a>
+      </div>
+    </div>
+  </nav>
 
-  <div id="box">
-    <p>Questo box cambierà colore ogni volta che premi il pulsante.</p>
-  </div>
+  <section id="home">
+    <h2>Galleria Immagini</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder50?text=Foto+1
+      https://via.placeholder.com/400x250?text=Foto+2
+      https://via.placeholder.com/400x250?text=Foto+3
+      <img src="https://via.placeholder.com/400x250?text=Fotoiv>
+  </section>
 
-  <script>
-    function cambiaColore() {
-      const box = document.getElementById("box");
-      const colori = ["#ffcccc", "#ccffcc", "#ccccff", "#ffffcc", "#ccffff"];
-      const coloreCasuale = colori[Math.floor(Math.random() * colori.length)];
-      box.style.backgroundColor = coloreCasuale;
-    }
-  </script>
+  <footer>
+    © 2025 Francesco - Pagina interattiva GitHub Pages
+  </footer>
 
 </body>
 </html>
